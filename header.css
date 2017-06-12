@@ -32,9 +32,23 @@
   left: 10px;
   margin-left: -90px;
 }
+.social-bootstrap {
+  transform: scale(0.5);
+}
+.social-list {
+  list-style: none;
+  display: inline-block;
+  margin-left: -47px;
+  vertical-align: middle;
+  margin-top: -15px;
+}
+.social-list.google {
+  vertical-align: bottom;
+}
 .social-nav {
   position: absolute;
   right: 10px;
+  top: -10px;
 }
 .main-news-nav {
   list-style: none;
