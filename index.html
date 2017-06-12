@@ -9,9 +9,11 @@
         <link rel="stylesheet" href="grid.css">
         <link rel="stylesheet" href="header.css">
         <link rel="stylesheet" src="bootstrap-social.css">
+        <link rel="stylesheet" src="news.css">
         <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
         <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     </head>
+    <body>
     <header>
       <div class='top-header-nav'>
        <ul class='top-header-list'>
@@ -26,9 +28,10 @@
       <div class='news-header'>
         <img src='images/fox-logo.png' class='main-logo'/>
         <ul class='social-nav'>
-         <li class='social-list'><img src='images/facebook.png' class='social-bootstrap'></li>
-         <li class='social-list twitter'><img src='images/twitter.png' class='social-bootstrap'></li>
-         <li class='social-list google'><img src='images/google.png' class='social-bootstrap'></li>
+         <li class='social-list search'><img src='images/search.png' class='social-bootstrap'></li>
+         <a href='http://www.facebook.com'><li class='social-list'><img src='images/facebook.png' class='social-bootstrap'></li></a>
+         <a href='https://twitter.com/brianmsj'><li class='social-list twitter'><img src='images/twitter.png' class='social-bootstrap'></li></a>
+         <a href='http://www.google.com'><li class='social-list google'><img src='images/google.png' class='social-bootstrap'></li></a>
         </ul>
         <ul class='main-news-nav'>
           <a href='http://www.foxnews.com/shows.html'><li class='main-news-links'>Home</li></a>
@@ -48,8 +51,15 @@
         </ul>
       </div>
       <div class='news-ribbon'></div>
-    <body>
-    </body>
+     <div class='news-container'>
+       <div class='left-news-container'>
+         <a class='headline-link'href='http://www.foxnews.com'><h1 class='main-news-title'>BREAKING: Brian McMinn, Web Developer gets Interview at Fox News</h1></a>
+       </div>
+       <div class='right-news-container'>
+         RIGHT NEWS
+       </div>
+     <div>
+  </body>
 <script src="http://code.jquery.com/jquery.js"></script>
 <script src="js/bootstrap.min.js"></script>
 </html>

@@ -19,11 +19,11 @@
 }
 .news-ribbon {
   background-color: #bb0000;
-  height: 5px;
+  height: 4px;
 }
 .news-header {
   background-color: #183a52;
-  height: 100px;
+  height: 104px;
   position: relative;
 }
 .main-logo {
@@ -43,6 +43,10 @@
   margin-top: -15px;
 }
 .social-list.google {
+  vertical-align: bottom;
+}
+.social-list.search {
+  margin-right: 15px;
   vertical-align: bottom;
 }
 .social-nav {
@@ -65,4 +69,32 @@
   font-family: arial,sans-serif;
   font-size: 14px;
   font-weight: bold;
+}
+.news-container {
+  position: relative;
+}
+.left-news-container {
+ position: absolute;
+ left: 10px;
+ display: inline-block;
+ border: 1px solid black;
+ color: #183a52;
+ max-width: 70%;
+}
+.right-news-container {
+ position: absolute;
+ display: inline-block;
+ right: 10px;
+ border: 1px solid black;
+}
+.main-news-title {
+ font-family: arial,sans-serif;
+ font-size: 36px;
+}
+.headline-link {
+ text-decoration: none;
+ color: #183a52;
+}
+.headline-link:hover {
+ text-decoration: underline;
 }
