@@ -36,3 +36,19 @@
   position: absolute;
   right: 10px;
 }
+.main-news-nav {
+  list-style: none;
+  position: absolute;
+  bottom: 5px;
+  left: -18px;
+  margin-bottom: 8px;
+  white-space: nowrap;
+}
+.main-news-links {
+  color: white;
+  display: inline-block;
+  margin-right: 10px;
+  font-family: arial,sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+}
