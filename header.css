@@ -17,3 +17,18 @@
 .biz-rad {
   margin-bottom: 1.5px;
 }
+.news-ribbon {
+  background-color: #bb0000;
+  height: 5px;
+}
+.news-header {
+  background-color: #183a52;
+  height: 100px;
+  position: relative;
+}
+.main-logo {
+  transform: scale(0.5);
+  position: absolute;
+  left: 10px;
+  margin-left: -90px;
+}
