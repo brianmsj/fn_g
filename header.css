@@ -1,0 +1,19 @@
+.top-header-nav{
+  background-color: #333333
+  }
+.aff-link {
+  transform: scale(0.5);
+  margin-right: -90px;
+}
+.aff-first {
+  padding-right: 10px;
+}
+.top-header-list {
+  display: inline-block;
+  white-space: nowrap;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.biz-rad {
+  margin-bottom: 1.5px;
+}
