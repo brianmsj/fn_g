@@ -146,6 +146,7 @@
 .project-item {
   display: inline-block;
   margin-top: 10px;
+  vertical-align: top;
 }
 .project-image {
   height: 100%;
@@ -158,4 +159,18 @@
 .project-image-container {
   width: 212px;
   height: 200px;
+}
+.project-text {
+  width: 200px;
+  white-space: normal;
+}
+.project-title:hover {
+  text-decoration: underline;
+}
+.headlines-list-main.project-list-main {
+  padding-left: 10px;
+}
+a {
+  text-decoration: none;
+  color: #183a52;
 }
