@@ -12,7 +12,7 @@ function getDataFromAPI() {
     appid: '3b2964ab014c461d0c9566fca9d1b89d',
     id: '524901'
   }
-$.getJSON('https://api.openweathermap.org/data/2.5/weather',query,
+$.getJSON('http://api.openweathermap.org/data/2.5/weather',query,
 function(data) {
   handleData(data)
   weatherImage(state)

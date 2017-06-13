@@ -22,6 +22,12 @@ body {
 .biz-rad {
   margin-bottom: 1.5px;
 }
+.aff-link.biz-rad {
+  margin-bottom: 5px;
+}
+.aff-link.biz-rad-1 {
+  margin-bottom: 1.5px;
+}
 .news-ribbon {
   background-color: #bb0000;
   height: 4px;
