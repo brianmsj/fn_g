@@ -1,4 +1,3 @@
-
 var state = {
   temp: "",
   city: "",
@@ -50,7 +49,6 @@ function handleData(data) {
 function renderData(state) {
   var weatherData = '<img class=weatherimage src=' + state.image + '>' +
   '<p class=temp >' + state.temp + '</p>' +
-  '<p class=city >' + state.city + '</p>' 
+  '<p class=city >' + state.city + '</p>'
   $('.weather-data').html(weatherData)
 }
-console.log(state)
