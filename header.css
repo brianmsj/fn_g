@@ -145,12 +145,13 @@
 }
 .project-item {
   display: inline-block;
+  margin-top: 10px;
 }
 .project-image {
   height: 100%;
   width: 100%;
 }
 .project-image-container {
-  width: 250px;
+  width: 212px;
   height: 200px;
 }
