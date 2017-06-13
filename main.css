@@ -26,6 +26,9 @@ body {
   background-color: #bb0000;
   height: 4px;
 }
+.breaking {
+  color: #bb0000;
+}
 .news-header {
   background-color: #183a52;
   height: 104px;
