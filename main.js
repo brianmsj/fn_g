@@ -6,42 +6,22 @@ var state = {
 }
 
 function getDataFromAPI() {
-$.ajax({
-    beforeSend: function(request) {
-        request.setRequestHeader("Access-Control-Allow-Origin:*");
-    },
-    dataType: "jsonp",
-    url: 'http://api.openweathermap.org/data/2.5/weather?id=524901&appid=3b2964ab014c461d0c9566fca9d1b89d&q=New+York&units=imperial',
-    success: function(data) {
+$.getJSON('https://api.apixu.com/v1/current.json?key=ed00f63863b94ac5a79222241171306&q=New+York',
+      function(data) {
+      console.log(data)
       handleData(data)
-      weatherImage(state)
       renderData(state)
-    }
-});
-}
+    })
+};
+
 getDataFromAPI()
 
-function weatherImage(state) {
-  if(state.conditions === 'Clouds') {
-    state.image = 'images/cloudy.png'
-  }
-  if(state.conditions === 'Sunny') {
-    state.image = 'images/sunny.png'
-  }
-  if(state.conditions === 'Drizzle' || 'Rain') {
-    state.image = 'images/rain.png'
-  }
-  if(state.conditions === 'Storms') {
-    state.image = 'images/thunderstorm.png'
-  }
-  else {
-    state.image = 'images/partly-cloudy.png'
-  }
-}
+console.log(state)
 function handleData(data) {
-  state.conditions = data.weather[0].main
-  state.temp = data.main.temp.toString().slice(0,2) + '°'
-  state.city = data.name
+  state.conditions = data.current.condition.text
+  state.temp = data.current.temp_f + '°'
+  state.city = data.location.name
+  state.image = 'https:' + data.current.condition.icon
 }
 
 
