@@ -6,19 +6,18 @@ var state = {
 }
 
 function getDataFromAPI() {
-  var query = {
-    q: 'New York',
-    units: 'imperial',
-    appid: '3b2964ab014c461d0c9566fca9d1b89d',
-    id: '524901'
-  }
-$.getJSON('https://api.openweathermap.org/data/2.5/weather',query,
-function(data) {
-  handleData(data)
-  weatherImage(state)
-  renderData(state)
-  })
-
+$.ajax({
+    beforeSend: function(request) {
+        request.setRequestHeader("Access-Control-Allow-Origin:*");
+    },
+    dataType: "jsonp",
+    url: 'http://api.openweathermap.org/data/2.5/weather?id=524901&appid=3b2964ab014c461d0c9566fca9d1b89d&q=New+York&units=imperial',
+    success: function(data) {
+      handleData(data)
+      weatherImage(state)
+      renderData(state)
+    }
+});
 }
 getDataFromAPI()
 
