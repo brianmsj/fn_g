@@ -16,14 +16,12 @@ $.getJSON('https://api.apixu.com/v1/current.json?key=ed00f63863b94ac5a7922224117
 
 getDataFromAPI()
 
-console.log(state)
 function handleData(data) {
   state.conditions = data.current.condition.text
   state.temp = data.current.temp_f + '°'
   state.city = data.location.name
   state.image = 'https:' + data.current.condition.icon
 }
-
 
 function renderData(state) {
   var weatherData = '<img class=weatherimage src=' + state.image + '>' +

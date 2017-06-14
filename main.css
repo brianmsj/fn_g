@@ -213,7 +213,16 @@ a {
   width: 300px;
 
 }
-
+.headline-image-brian-main-container {
+  height: 300px;
+  width: 184px;
+  display: inline-block;
+  vertical-align: top;
+}
+.headline-image-brian-main {
+  width: 100%;
+  height: 85%;
+}
 .temp {
   display: inline-block;
   position: absolute;
